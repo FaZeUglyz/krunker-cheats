@@ -1,0 +1,23 @@
+{
+  "name": "FaZe_Uglyz Krunker Cheats",
+  "homepage_url": "https://github.com/FaZeUglyz/krunker-cheats",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "description": "A krunker.io modification",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://krunker.io/*",
+    "background"
+  ],
+  "web_accessible_resources": [
+    "oscillator.js", "zip.js", "zip-ext.js", "game.js"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Gaming Setup"
+  },
+  "background": {
+    "scripts": ["hook.js"]
+  }
+}
